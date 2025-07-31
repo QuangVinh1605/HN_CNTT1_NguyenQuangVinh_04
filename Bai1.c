@@ -20,7 +20,6 @@ void push(Node** stack, char command[100]) {
     *stack = newNode;
 }
 
-// Trả về chuỗi command, cần malloc và trả về con trỏ để dùng ngoài
 char* pop(Node** stack) {
     if (*stack == NULL) return NULL;
 
@@ -77,7 +76,7 @@ int main() {
         printf("7. thoat\n");
         printf("enter your choice : ");
         scanf("%d", &choice);
-        getchar(); // bỏ ký tự newline sau scanf
+        getchar();
 
         switch (choice) {
             case 1: {
